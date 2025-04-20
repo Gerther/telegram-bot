@@ -29,7 +29,6 @@ LANGUAGES = {
         "works_btn": "🎨 Мои работы",
         "contacts_btn": "📬 Контакты",
         "lang_btn": "🌐 Выбрать язык",
-        "code_btn": "💾 Мои коды",
         "back_btn": "🔙 Назад",
         "category_buttons": ["🧊 3D", "🎨 Дизайн", "🎥 After Effects"]
     },
@@ -51,7 +50,6 @@ LANGUAGES = {
         "works_btn": "🎨 My works",
         "contacts_btn": "📬 Contacts",
         "lang_btn": "🌐 Choose language",
-        "code_btn": "💾 My code",
         "back_btn": "🔙 Back",
         "category_buttons": ["🧊 3D", "🎨 Design", "🎥 After Effects"]
     },
@@ -73,7 +71,6 @@ LANGUAGES = {
         "works_btn": "🎨 Moje prace",
         "contacts_btn": "📬 Kontakty",
         "lang_btn": "🌐 Wybierz język",
-        "code_btn": "💾 Moje kody",
         "back_btn": "🔙 Wstecz",
         "category_buttons": ["🧊 3D", "🎨 Design", "🎥 After Effects"]
     }
@@ -84,7 +81,6 @@ def get_main_menu(lang):
     return ReplyKeyboardMarkup([
         [KeyboardButton(t["about_btn"])],
         [KeyboardButton(t["works_btn"])],
-        [KeyboardButton(t["code_btn"])],
         [KeyboardButton(t["contacts_btn"])],
         [KeyboardButton(t["lang_btn"])]
     ], resize_keyboard=True)
@@ -93,7 +89,7 @@ def get_works_menu(lang):
     t = LANGUAGES[lang]
     return ReplyKeyboardMarkup([
         [KeyboardButton(t["category_buttons"][0]), KeyboardButton(t["category_buttons"][1])],
-        [KeyboardButton(t["category_buttons"][2])],
+        [KeyboardButton(t["category_buttons"][2]), KeyboardButton("💾 Code")],
         [KeyboardButton(t["back_btn"])]
     ], resize_keyboard=True)
 
@@ -117,9 +113,11 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(t["contacts"])
     elif msg == t["works_btn"]:
         await update.message.reply_text(t["choose_category"], reply_markup=get_works_menu(lang))
-    elif msg == t["code_btn"]:
-        await update.message.reply_text("📂 GitHub: https://github.com/Gerther?tab=overview&from=2025-04-01&to=2025-04-20")
-    elif msg in t["category_buttons"]:
+    elif msg in t["category_buttons"] or msg == "💾 Code":
+        if msg == "💾 Code":
+            await update.message.reply_text("📂 GitHub: https://github.com/Gerther?tab=overview&from=2025-04-01&to=2025-04-20")
+            return
+
         category = get_category_from_button(msg)
         path = os.path.join(WORKS_FOLDER, category)
         file_path = get_random_file(path)
