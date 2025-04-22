@@ -9,12 +9,11 @@ load_dotenv()
 TOKEN = os.getenv("TOKEN")
 WORKS_FOLDER = "works"
 
-# Переводы
 LANGUAGES = {
     "ru": {
         "start": "Привет! Я — little.helper 👋 я помогу тебе узнать подробности моего хозяена\nВыбери, что хочешь узнать:",
         "about": """👋 Привет! Я Артём — увлечённый 3D-художник, дизайнер и разработчик.
-🔧 Создаю крутых ботов на Python, JavaScript, Discord.js и через Telegram API.
+🔧 Создаю крутых ботов на Python, JavaScript, Discord.js и через Telegram API, веб-разработчик: mid по Front End и junior по Back End.
 🎨 Работаю в Blender, проектируя стильные 3D-модели и анимации.
 💻 Владею After Effects, Photoshop, Illustrator, Premiere Pro и другими инструментами из Creative Cloud — от монтажа до motion-дизайна.
 🧠 Постоянно учусь новому, совмещая код с креативом и превращая идеи в живые проекты.""",
@@ -35,7 +34,7 @@ LANGUAGES = {
     "en": {
         "start": "Hi! I'm little.helper 👋 I’ll help you learn more about my creator.\nChoose what you want to know:",
         "about": """👋 Hi! I'm Artem — a passionate 3D artist, designer, and developer.
-🔧 I create powerful bots using Python, JavaScript, Discord.js, and the Telegram API.
+🔧 I create powerful bots using Python, JavaScript, Discord.js, and the Telegram API. I'm also a web developer: mid-level in Front End and junior in Back End.
 🎨 I work in Blender, crafting stylish 3D models and animations.
 💻 Skilled in After Effects, Photoshop, Illustrator, Premiere Pro, and other Creative Cloud tools — from editing to motion design.
 🧠 Always learning, I combine code with creativity to bring ideas to life.""",
@@ -56,7 +55,7 @@ LANGUAGES = {
     "pl": {
         "start": "Cześć! Jestem little.helper 👋 pomogę ci poznać mojego właściciela\nWybierz, co chcesz wiedzieć:",
         "about": """👋 Cześć! Jestem Artem — pasjonat 3D, projektant i programista.
-🔧 Tworzę boty w Pythonie, JavaScript, Discord.js oraz przez Telegram API.
+🔧 Tworzę boty w Pythonie, JavaScript, Discord.js oraz przez Telegram API. Jestem też web developerem: średniozaawansowany w Front Endzie i junior w Back Endzie.
 🎨 Pracuję w Blenderze, tworząc stylowe modele 3D i animacje.
 💻 Znam After Effects, Photoshop, Illustrator, Premiere Pro i inne narzędzia Creative Cloud — od montażu po motion design.
 🧠 Ciągle się uczę, łączę kod z kreatywnością i zamieniam pomysły w żywe projekty.""",
