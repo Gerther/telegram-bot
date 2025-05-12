@@ -17,7 +17,7 @@ LANGUAGES = {
 🎨 Работаю в Blender, проектируя стильные 3D-модели и анимации.
 💻 Владею After Effects, Photoshop, Illustrator, Premiere Pro и другими инструментами из Creative Cloud — от монтажа до motion-дизайна.
 🧠 Постоянно учусь новому, совмещая код с креативом и превращая идеи в живые проекты.""",
-        "contacts": "Discord: arty4509",
+        "contacts": "Discord: arty4509\nTelegram: @EbIlancik",
         "choose_category": "Выбери категорию работ:",
         "no_works": "Пока нет добавленных работ 😢",
         "back_to_main": "Главное меню:",
@@ -38,7 +38,7 @@ LANGUAGES = {
 🎨 I work in Blender, crafting stylish 3D models and animations.
 💻 Skilled in After Effects, Photoshop, Illustrator, Premiere Pro, and other Creative Cloud tools — from editing to motion design.
 🧠 Always learning, I combine code with creativity to bring ideas to life.""",
-        "contacts": "Discord: arty4509",
+        "contacts": "Discord: arty4509\nTelegram: @EbIlancik",
         "choose_category": "Choose a category of works:",
         "no_works": "No works added yet 😢",
         "back_to_main": "Main menu:",
@@ -59,7 +59,7 @@ LANGUAGES = {
 🎨 Pracuję w Blenderze, tworząc stylowe modele 3D i animacje.
 💻 Znam After Effects, Photoshop, Illustrator, Premiere Pro i inne narzędzia Creative Cloud — od montażu po motion design.
 🧠 Ciągle się uczę, łączę kod z kreatywnością i zamieniam pomysły w żywe projekty.""",
-        "contacts": "Discord: arty4509",
+        "contacts": "Discord: arty4509\nTelegram: @EbIlancik",
         "choose_category": "Wybierz kategorię prac:",
         "no_works": "Brak dodanych prac 😢",
         "back_to_main": "Główne menu:",
